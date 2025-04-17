@@ -4,7 +4,7 @@
 // Created on: April 2025
 // This file contains the JS functions for index.html
 
-"use strict"
+'use strict'
 const randomNumber = Math.floor(Math.random() * 6) + 1
 
 /**
@@ -13,10 +13,10 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 // eslint-disable-next-line no-unused-vars
 function checkNumber () {
   // Get input values
-  const userNumber = parseFloat(document.getElementById("user-Number").value)
+  const userNumber = parseFloat(document.getElementById('user-Number').value)
 
   // process
-  if (userNumber === randomNumber){
+  if (userNumber === randomNumber) {
     // output
     document.getElementById('result').innerHTML =
       '<p>You have guessed the correct number</p>'
