@@ -8,24 +8,24 @@
 const randomNumber = Math.floor(Math.random() * 6) + 1
 
 /**
- * Checks random number
- */
+  * Checks random number
+  */
 // eslint-disable-next-line no-unused-vars
-function checkNumber() {
+function checkNumber () {
   // Get input values
   const userNumber = parseFloat(document.getElementById("user-Number").value)
 
   // process
-if(userNumber === randomNumber){
-  // output
-  document.getElementById('result').innerHTML =
-  '<p>You have guessed the correct number</p>'
-}
-
-if (userNumber !== randomNumber) {
-  // output
+  if (userNumber === randomNumber){
+    // output
     document.getElementById('result').innerHTML =
-    '<p>You have guessed the wrong number' +
-    '<br/>The correct number was: ' + randomNumber + '</p>'
+      '<p>You have guessed the correct number</p>'
+  }
+
+  if (userNumber !== randomNumber) {
+    // output
+    document.getElementById('result').innerHTML =
+      '<p>You have guessed the wrong number' +
+      '<br/>The correct number was: ' + randomNumber + '</p>'
   }
 }
