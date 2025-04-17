@@ -10,6 +10,7 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 /**
  * Checks random number
  */
+// eslint-disable-next-line no-unused-vars
 function checkNumber() {
   // Get input values
   const userNumber = parseFloat(document.getElementById("user-Number").value)
